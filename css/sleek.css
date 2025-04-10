@@ -77,12 +77,25 @@ video {
 }
 
 #header {
-	margin: 20px;
+	margin: 0; /* logoyu ortalamak için boşluk kaldırıldı */
 }
 
 #title {
 	font-family: "Comfortaa";
 	font-size: 48px;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 10;
+}
+
+#title img {
+	display: block;
+	margin: 0 auto;
+	max-width: 250px;
+	height: auto;
 }
 
 #title-text {
@@ -92,10 +105,6 @@ video {
 .center #title-image {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-#title img {
-	display: block;
 }
 
 #subtitle {
