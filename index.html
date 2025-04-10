@@ -28,11 +28,7 @@
       </div>
       <div id="messages"></div>
     </div>
-    <div id="music">
-      <span data-lang="now_playing"></span>
-      <div id="music-name"></div>
-    </div>
-    <div id="enable-audio">Click here to enable music preview</div>
+
     <div id="error-box"></div>
     <div id="warn"></div>
 
@@ -40,45 +36,5 @@
     <script src="js/vendor/jquery-2.1.1.min.js"></script>
     <script src="js/vendor/jquery.backstretch.min.js"></script>
     <script src="js/sleek.js"></script>
-
-    <!-- 🎵 Tıklayarak müzik çal/dur -->
-    <script>
-      let audioElement = null;
-      let isYouTube = false;
-      let isPlaying = false;
-
-      window.addEventListener("DOMContentLoaded", () => {
-        const musicDiv = document.getElementById("music");
-        if (musicDiv) {
-          musicDiv.style.cursor = "pointer";
-          musicDiv.title = "Müziğe tıkla: çal/durdur";
-
-          musicDiv.addEventListener("click", () => {
-            const audio = document.querySelector("audio");
-            const ytPlayer = window.i;
-
-            if (audio) {
-              audioElement = audio;
-              if (audio.paused) {
-                audio.play();
-                isPlaying = true;
-              } else {
-                audio.pause();
-                isPlaying = false;
-              }
-            } else if (ytPlayer && ytPlayer.getPlayerState) {
-              const state = ytPlayer.getPlayerState();
-              if (state === 1) {
-                ytPlayer.pauseVideo();
-                isPlaying = false;
-              } else {
-                ytPlayer.playVideo();
-                isPlaying = true;
-              }
-            }
-          });
-        }
-      });
-    </script>
   </body>
 </html>
