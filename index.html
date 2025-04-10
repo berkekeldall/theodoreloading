@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="robots" content="noindex" />
-		<meta charset="utf-8" />
-		<title>SleekLoad</title>
-		<script type="text/javascript">
-			document.write(
-				'<link rel="stylesheet" href="css/sleek.css?' +
-					Math.random() +
-					'">'
-			);
-		</script>
-	</head>
-	<body>
-		<div id="video-container"></div>
-		<div id="player"></div>
-		<div id="overlay"></div>
-		<div id="header">
-			<div id="title"></div>
-			<div id="subtitle" data-lang="below_logo"></div>
-		</div>
-		<div id="status-container">
-			<span id="status-left" data-lang="loading"></span>
-			<span id="status-right">0%</span>
-			<div id="loading">
-				<div id="loading-progress"></div>
-			</div>
-			<div id="messages"></div>
-		</div>
-		<div id="music">
-			<span data-lang="now_playing"></span>
-			<div id="music-name"></div>
-		</div>
-		<div id="enable-audio">Click here to enable music preview</div>
-		<div id="error-box"></div>
-		<div id="warn"></div>
-		
-		<script src="js/vendor/objectFitPolyfill.min.js"></script>
-		<script src="js/vendor/jquery-2.1.1.min.js"></script>
-		<script src="js/vendor/jquery.backstretch.min.js"></script>
-		<script src="js/sleek.js"></script>
+  <head>
+    <meta name="robots" content="noindex" />
+    <meta charset="utf-8" />
+    <title>SleekLoad</title>
+    <script type="text/javascript">
+      document.write(
+        '<link rel="stylesheet" href="css/sleek.css?' +
+          Math.random() +
+          '">'
+      );
+    </script>
+  </head>
+  <body>
+    <div id="video-container"></div>
+    <div id="player"></div>
+    <div id="overlay"></div>
+    <div id="header">
+      <div id="title"></div>
+      <div id="subtitle" data-lang="below_logo"></div>
+    </div>
+    <div id="status-container">
+      <span id="status-left" data-lang="loading"></span>
+      <span id="status-right">0%</span>
+      <div id="loading">
+        <div id="loading-progress"></div>
+      </div>
+      <div id="messages"></div>
+    </div>
+    <div id="music">
+      <span data-lang="now_playing"></span>
+      <div id="music-name"></div>
+    </div>
+    <div id="enable-audio">Click here to enable music preview</div>
+    <div id="error-box"></div>
+    <div id="warn"></div>
 
-		<!-- 🎵 Müzik tıklayıp başlat/durdurma -->
-		<script>
-			let isPlaying = false;
+    <script src="js/vendor/objectFitPolyfill.min.js"></script>
+    <script src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="js/vendor/jquery.backstretch.min.js"></script>
+    <script src="js/sleek.js"></script>
 
-			window.addEventListener("DOMContentLoaded", () => {
-				const musicDiv = document.getElementById("music");
+    <!-- 🎵 Tıklayarak müzik çal/dur -->
+    <script>
+      let audioElement = null;
+      let isYouTube = false;
+      let isPlaying = false;
 
-				if (musicDiv) {
-					musicDiv.style.cursor = "pointer";
-					musicDiv.title = "Tıkla: Müzik başlat/durdur";
+      window.addEventListener("DOMContentLoaded", () => {
+        const musicDiv = document.getElementById("music");
+        if (musicDiv) {
+          musicDiv.style.cursor = "pointer";
+          musicDiv.title = "Müziğe tıkla: çal/durdur";
 
-					musicDiv.addEventListener("click", () => {
-						const audios = document.querySelectorAll("audio");
+          musicDiv.addEventListener("click", () => {
+            const audio = document.querySelector("audio");
+            const ytPlayer = window.i;
 
-						if (audios.length > 0) {
-							audios.forEach(audio => {
-								if (isPlaying) {
-									audio.pause();
-								} else {
-									audio.play();
-								}
-							});
-							isPlaying = !isPlaying;
-						}
-					});
-				}
-			});
-		</script>
-	</body>
+            if (audio) {
+              audioElement = audio;
+              if (audio.paused) {
+                audio.play();
+                isPlaying = true;
+              } else {
+                audio.pause();
+                isPlaying = false;
+              }
+            } else if (ytPlayer && ytPlayer.getPlayerState) {
+              const state = ytPlayer.getPlayerState();
+              if (state === 1) {
+                ytPlayer.pauseVideo();
+                isPlaying = false;
+              } else {
+                ytPlayer.playVideo();
+                isPlaying = true;
+              }
+            }
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
