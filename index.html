@@ -35,9 +35,39 @@
 		<div id="enable-audio">Click here to enable music preview</div>
 		<div id="error-box"></div>
 		<div id="warn"></div>
+		
 		<script src="js/vendor/objectFitPolyfill.min.js"></script>
 		<script src="js/vendor/jquery-2.1.1.min.js"></script>
 		<script src="js/vendor/jquery.backstretch.min.js"></script>
 		<script src="js/sleek.js"></script>
+
+		<!-- 🎵 Müzik tıklayıp başlat/durdurma -->
+		<script>
+			let isPlaying = false;
+
+			window.addEventListener("DOMContentLoaded", () => {
+				const musicDiv = document.getElementById("music");
+
+				if (musicDiv) {
+					musicDiv.style.cursor = "pointer";
+					musicDiv.title = "Tıkla: Müzik başlat/durdur";
+
+					musicDiv.addEventListener("click", () => {
+						const audios = document.querySelectorAll("audio");
+
+						if (audios.length > 0) {
+							audios.forEach(audio => {
+								if (isPlaying) {
+									audio.pause();
+								} else {
+									audio.play();
+								}
+							});
+							isPlaying = !isPlaying;
+						}
+					});
+				}
+			});
+		</script>
 	</body>
 </html>
