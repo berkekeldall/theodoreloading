@@ -165,3 +165,5 @@ config.messages_fade_duration = 1000
 // Can be useful for finding errors
 // "true" or "false"
 config.errors_show_ingame = true
+
+config.music_autoplay = false
