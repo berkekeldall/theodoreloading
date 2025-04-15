@@ -34,10 +34,35 @@ config.music_volume = 5
 config.music_gmod_volume = true
 config.messages_enable = true
 config.messages_list = [
-  "Oyun alanımızdan uzak dur!",
-  "Köpekler(Exe,Bobby) giremez!",
-  "Daha iyi bir deneyim.",
-  "ODTU'de TOMA'nın ne işi var?"
+  "Hogwarts’ta asla tamamen yalnız değilsin.",
+  "Bir büyücü kimliğini asasıyla değil, yaptığı seçimlerle kanıtlar.",
+  "Bir Seherbaz, bir Ruh Emici ve bir Kedavra büyüsü bir bara girer… Şaka şaka, Ruh Emici barda ne yapsın?",
+  "Asanı en son nereye koyduğunu hatırlıyor musun? Çünkü birazdan ihtiyacın olacak.",
+  "Eğer bu satırı okuyorsan... hâlâ yükleniyoruz. Beklemek de bir sanattır.",
+  "Bu yükleme ekranı, Peeves’in ders anlatmasından daha az kaotik.",
+  "Yüklenme süresi, Snape’in gülümseme süresi kadar kısa olacak. Söz veremeyiz.",
+  "Eğer sistem çökerse, suç Dobby'nin olabilir. Belki.",
+  "Asanı cesaretle kaldır… ama önce güncellemeyi indir.",
+  "Ejderhaya kafa tutmak kolaydı, ama bu yükleme çubuğu…",
+  "Çayını al, rahatla… biz hallediyoruz.",
+  "Expelliarmus her derde deva… ama büyü yapmadan önce yüklenmemiz lazım.",
+  "Kristal küre bu yüklemeyi %87 gösteriyor... ama yine de emin değiliz.",
+  "Bir vizyon görüyorum... senin başarılı RP yaptığını. Ama önce sunucu açılsın.",
+  "Snape bu yüklemeye baksa %100 sinirlenirdi.",
+  "İksir yaparken sabır gerek… bu yüklemede de.",
+  "Bir süpürgeyle yükleme çubuğunu süpürmeyi denedik. Olmadı.",
+  "Filch şu an seni arıyor... ama endişelenme, yükelem bitene kadar bulamaz.",
+  "Büyü tarihinin en yavaş savaşı bile bu yüklemeden hızlıydı.",
+  "Bin yılın tarihi yüklendi. Sıra haritalarda.",
+  "Bu ekran az sonra başka bir ekrana dönüşecek. Gözünü ayırma.",
+  "Avada Kedavra ile çözülmeyen bir şey varsa… bu loading ekranıdır.",
+  "Karanlık işaretini yüklemek daha az zaman alıyor… ama biz legal çalışıyoruz.",
+  "Sunucu büyü kitabını yanlış sayfadan açtı. Şimdi düzeltmeye çalışıyoruz.",
+  "Draco, sunucunun sahibi olduğunu iddia ediyor. Gülüp geçiyoruz.",
+  "Quidditch maçı ertelendi, çünkü Snitch sunucuya kaçtı.",
+  "Bu sırada, Fred ve George sunucuya bir şeyler ekliyor olabilir.",
+  "Ron hâlâ şifreyi çözmeye çalışıyor... Hermione olmadan.",
+  "Bir yüzük bulduysan geri bırak. O iş başka bir evrende."
 ]
 config.messages_random_order = true
 config.messages_delay = 5000
