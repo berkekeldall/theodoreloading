@@ -12,16 +12,11 @@ config.background_images = [
   "background7.png",
   "background8.png",
   "background9.png",
-  "background10.png",
   "background11.png",
   "background12.png",
   "background13.png",
   "background14.png",
-  "background15.png",
-  "background16.png",
-  "background17.png",
   "background18.png",
-  "background19.png",
   "background20.png",
   "background21.png"
 ]
