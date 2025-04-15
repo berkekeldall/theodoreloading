@@ -32,7 +32,7 @@ config.messages_list = [
   "Daha iyi bir deneyim.",
   "ODTU'de TOMA'nın ne işi var?"
 ]
-config.messages_random_order = false
+config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
