@@ -51,7 +51,7 @@ config.messages_list = [
   "Snape bu yüklemeye baksa %100 sinirlenirdi.",
   "İksir yaparken sabır gerek… bu yüklemede de.",
   "Bir süpürgeyle yükleme çubuğunu süpürmeyi denedik. Olmadı.",
-  "Filch şu an seni arıyor... ama endişelenme, yükelem bitene kadar bulamaz.",
+  "Filch şu an seni arıyor... ama endişelenme, yükleme bitene kadar bulamaz.",
   "Büyü tarihinin en yavaş savaşı bile bu yüklemeden hızlıydı.",
   "Bin yılın tarihi yüklendi. Sıra haritalarda.",
   "Bu ekran az sonra başka bir ekrana dönüşecek. Gözünü ayırma.",
