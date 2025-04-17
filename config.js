@@ -18,7 +18,11 @@ config.background_images = [
   "background14.png",
   "background18.png",
   "background20.png",
-  "background21.png"
+  "background21.png",
+  "background22.png",
+  "background23.png",
+  "background24.png",
+  "background25.png"
 ]
 config.background_images_random_order = true
 config.background_images_duration = 5000
