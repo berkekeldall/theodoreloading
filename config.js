@@ -69,5 +69,5 @@ config.messages_list = [
 ]
 config.messages_random_order = true
 config.messages_delay = 5000
-config.messages_fade_duration = 2000
+config.messages_fade_duration = 1000
 config.errors_show_ingame = true
