@@ -18,7 +18,6 @@ config.background_images = [
   "background14.png",
   "background18.png",
   "background20.png",
-  "background21.png",
   "background22.png",
   "background23.png",
   "background24.png",
@@ -70,5 +69,5 @@ config.messages_list = [
 ]
 config.messages_random_order = true
 config.messages_delay = 5000
-config.messages_fade_duration = 1000
+config.messages_fade_duration = 2000
 config.errors_show_ingame = true
