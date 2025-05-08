@@ -1,20 +1,20 @@
 @font-face {
 	font-family: "Aptos Bold";
-	src: url("fonts/Comfortaa-Regular.otf") format("opentype");
+	src: url("fonts/aptos-bold.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Aptos Display";
-	src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+	src: url("fonts/aptos-display.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Aptos Display";
-	src: url("fonts/OpenSans-Bold.ttf") format("truetype");
+	src: url("fonts/aptos-display.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
