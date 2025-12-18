@@ -16,7 +16,11 @@ config.background_images = [
   "yilbasi5.png",
   "yilbasi6.png",
   "yilbasi7.png",
-  "yilbasi8.png"
+  "yilbasi8.png",
+  "yilbasi9.png",
+  "yilbasi10.png",
+  "yilbasi11.png",
+  "yilbasi12.png"
 ]
 config.background_images_random_order = true
 config.background_images_duration = 5000
@@ -63,3 +67,4 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
