@@ -1,3 +1,4 @@
 language.below_logo = "We are currently playing %%gamemode%% at %%map%%"
-language.loading = "Yükleniyor..."
+language.loading = "V1.5 Yılbaşı Edit Yükleniyor..."
 language.now_playing = "Now playing"
+
