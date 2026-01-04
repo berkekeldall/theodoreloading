@@ -9,6 +9,17 @@ config.logo_show_info = false
 config.background_use_video = false
 config.background_map_based = false
 config.background_images = [
+  "ananlabanyo1",
+  "ananlabanyo2",
+  "ananlabanyo3",
+  "ananlabanyo4",
+  "ananlabanyo5",
+  "ananlabanyo6",
+  "ananlabanyo7",
+  "ananlabanyo8",
+  "ananlabanyo9",
+  "ananlabanyo10",
+  "ananlabanyo11",
   "yilbasi1.png",
   "yilbasi2.png",
   "yilbasi3.png",
@@ -20,18 +31,7 @@ config.background_images = [
   "yilbasi9.png",
   "yilbasi10.png",
   "yilbasi11.png",
-  "yilbasi12.png",
-  "ananlabanyo1",
-  "ananlabanyo2",
-  "ananlabanyo3",
-  "ananlabanyo4",
-  "ananlabanyo5",
-  "ananlabanyo6",
-  "ananlabanyo7",
-  "ananlabanyo8",
-  "ananlabanyo9",
-  "ananlabanyo10",
-  "ananlabanyo11"
+  "yilbasi12.png"
 ]
 config.background_images_random_order = true
 config.background_images_duration = 5000
@@ -78,5 +78,6 @@ config.messages_random_order = true
 config.messages_delay = 5000
 config.messages_fade_duration = 1000
 config.errors_show_ingame = true
+
 
 
